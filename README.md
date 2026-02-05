@@ -171,4 +171,6 @@ ai_ops_assistant/
 ```
 Made with ❤️ by Jayesh Kaushik
 
-Questions? Issues? Open a GitHub issue!
+Questions? 
+Issues? 
+Open a GitHub issue!
