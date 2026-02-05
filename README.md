@@ -98,7 +98,9 @@ Try these commands to see the assistant in action:
     ```bash
     python3 main.py "Top news today"
     ```
-4.**Wikipedia**:
+    
+4. **Wikipedia**:
+
     ```bash
     python3 main.py "Who is Mukesh Ambani"
     ```
