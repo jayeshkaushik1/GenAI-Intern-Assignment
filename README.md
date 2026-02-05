@@ -3,26 +3,26 @@ An end-to-end multi agent AI system that can plan tasks, execute them using real
 
 The assistant supports:
 
-🌤️ Weather information
+- Weather information
 
-🐙 GitHub repository search
+- GitHub repository search
 
-📰 Indian news
+- Indian news
 
-📈 Stock prices (NSE/BSE)
+- Stock prices (NSE/BSE)
 
-📖 Wikipedia 
+- Wikipedia 
 
 Built with a **Planner-Executor-Verifier** architecture and a beautiful CLI interface.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # After setup
 python3 main.py
 ```
 
-## 🏗 Architecture
+## Architecture
 
 The system follows a multi-agent architectural pattern:
 
@@ -43,7 +43,7 @@ The system follows a multi-agent architectural pattern:
     *   **Role**: Reviews results and synthesizes a final answer.
     *   **Output**: A clean, bulleted list of facts.
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
 ### 1. Prerequisites
 - Python 3.8+
@@ -79,7 +79,7 @@ GNEWS_API_KEY=...
 python main.py
 ```
 
-## 🧪 Example Prompts
+## Example Prompts
 
 Try these commands to see the assistant in action:
 
@@ -110,7 +110,7 @@ Try these commands to see the assistant in action:
     python3 main.py "Check the weather in Bangalore and find the latest news about ISRO"
     ```
 
-## 🔌 Integrated APIs
+## Integrated APIs
 
 1.  **Groq API**:
     *   **Purpose**: Provides the LLM reasoning engine (Llama 3.3 70B Versatile).
@@ -136,13 +136,13 @@ Try these commands to see the assistant in action:
     *   **Auth**: Public (No API key required).
 
 
-## ⚠️ Known Limitations
+## Known Limitations
 
 1.  **API Rate Limits:**: Free tier APIs may enforce request limits under heavy usage.
 2.  **Stock Delay**: Data is fetched from Yahoo Finance, which may have a slight delay compared to real time trading terminals.
 3.  **Context Window:** Very large outputs may be truncated due to LLM context limits.
 
-## 📂 Project Structure
+## Project Structure
 
 A detailed overview of the codebase:
 
