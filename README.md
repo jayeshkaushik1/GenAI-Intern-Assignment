@@ -42,8 +42,14 @@ The system follows a multi-agent architectural pattern:
 ### 1. Prerequisites
 - Python 3.8+
 - API Keys for Groq (LLM) and GNews.
+  
+### 2. Clone Repository
+```bash
+git clone https://github.com/jayeshkaushik1/GenAI-Intern-Assignment.git
+cd GenAI-Intern-Assignment
+```
 
-### 2. Installation
+### 3. Installation
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
@@ -52,7 +58,7 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-### 3. Configuration
+### 4. Configuration
 Edit `.env` and add your keys:
 ```env
 # Required: LLM Provider
@@ -62,31 +68,10 @@ GROQ_API_KEY=...
 GNEWS_API_KEY=...
 ```
 
-## 🔌 Integrated APIs
-
-1.  **Groq API**:
-    *   **Purpose**: Provides the LLM reasoning engine (Llama 3.3 70B Versatile).
-    *   **Usage**: Planning, reasoning, and result verification.
-
-2.  **OpenMeteo API**:
-    *   **Purpose**: Real-time weather data.
-    *   **Auth**: Public (No key required).
-
-3.  **GitHub API**:
-    *   **Purpose**: Searches GitHub repositories and retrieves repository metadata.
-    *   **Auth**: Public (Rate limited) or Token-based.
-    
-4.  **GNews API**:
-    *   **Purpose**: Fetches the latest news headlines from India and topic based news.
-    *   **Auth**: API Key (GNEWS_API_KEY).
-    
-5.  **Yahoo Finance API (via yfinance)**:
-    *   **Purpose**: Retrieves stock prices for Indian (NSE/BSE) and global markets.
-    *   **Auth**: Public (No API key required).
-6.  **Wikipedia API (via Python wikipedia library)**:
-    *   **Purpose**: Fetches short summaries for informational and encyclopedic queries.
-    *   **Auth**: Public (No API key required).
-
+### 5. Run the Project
+```bash
+python main.py
+```
 
 ## 🧪 Example Prompts
 
@@ -112,6 +97,31 @@ Try these commands to see the assistant in action:
     ```bash
     python3 main.py "Check the weather in Bangalore and find the latest news about ISRO"
     ```
+
+## 🔌 Integrated APIs
+
+1.  **Groq API**:
+    *   **Purpose**: Provides the LLM reasoning engine (Llama 3.3 70B Versatile).
+    *   **Usage**: Planning, reasoning, and result verification.
+
+2.  **OpenMeteo API**:
+    *   **Purpose**: Real-time weather data.
+    *   **Auth**: Public (No key required).
+
+3.  **GitHub API**:
+    *   **Purpose**: Searches GitHub repositories and retrieves repository metadata.
+    *   **Auth**: Public (Rate limited) or Token-based.
+    
+4.  **GNews API**:
+    *   **Purpose**: Fetches the latest news headlines from India and topic based news.
+    *   **Auth**: API Key (GNEWS_API_KEY).
+    
+5.  **Yahoo Finance API (via yfinance)**:
+    *   **Purpose**: Retrieves stock prices for Indian (NSE/BSE) and global markets.
+    *   **Auth**: Public (No API key required).
+6.  **Wikipedia API (via Python wikipedia library)**:
+    *   **Purpose**: Fetches short summaries for informational and encyclopedic queries.
+    *   **Auth**: Public (No API key required).
 
 
 ## ⚠️ Known Limitations
