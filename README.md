@@ -2,6 +2,7 @@
 An end-to-end multi agent AI system that can plan tasks, execute them using real world APIs, and verify results to produce a final human readable answer.
 
 The assistant supports:
+
 🌤️ Weather information
 
 🐙 GitHub repository search
