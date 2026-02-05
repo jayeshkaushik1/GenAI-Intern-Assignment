@@ -3,9 +3,14 @@ An end-to-end multi agent AI system that can plan tasks, execute them using real
 
 The assistant supports:
 🌤️ Weather information
+
 🐙 GitHub repository search
+
 📰 Indian news
+
 📈 Stock prices (NSE/BSE)
+
+📖 Wikipedia 
 
 Built with a **Planner-Executor-Verifier** architecture and a beautiful CLI interface.
 
@@ -92,8 +97,12 @@ Try these commands to see the assistant in action:
     ```bash
     python3 main.py "Top news today"
     ```
+4.**Wikipedia**:
+    ```bash
+    python3 main.py "Who is Mukesh Ambani"
+    ```
 
-4.  **Complex Multi-Step**:
+5.  **Complex Multi-Step**:
     ```bash
     python3 main.py "Check the weather in Bangalore and find the latest news about ISRO"
     ```
