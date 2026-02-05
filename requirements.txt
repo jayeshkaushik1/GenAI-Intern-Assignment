@@ -1,0 +1,8 @@
+openai
+python-dotenv
+requests
+pydantic
+termcolor
+yfinance
+wikipedia
+rich
